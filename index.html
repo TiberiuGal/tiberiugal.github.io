@@ -1,1 +1,500 @@
-hello geta
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <link rel="stylesheet" href="cv.css" />
+  <style>
+    pre.prettyprint {
+      border: 0;
+      background-color: transparent;
+      padding: 0;
+      white-space: pre-wrap;
+    }
+    span.str {
+      color: #666;
+    }
+    span.pun {
+      color: #f47c3c;
+    }
+    .navbar-nav {
+      flex-direction: row !important;
+    }
+    .navbar-nav .nav-link {
+      padding-right: 0.5rem !important;
+      padding-left: 0.5rem !important;
+    }
+    .b1 {
+      background-image: url('forest.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .panel.p1 {
+      background-image: url('isometric-city-with-eco-park-playground-hotel_107791-13516.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-width: 400px;
+    }
+    .panel>p {
+        background-color: rgba(var(--bs-white-rgb),var(--bs-bg-opacity))!important;
+        --bs-bg-opacity: 0.75;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+    }
+    .panel.p3 {
+      background-image: url('hacker.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .panel.p5 {
+      background-image: url('vector-office-character-illustration.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .panel.p6 {
+      background-image: url('factory.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .panel.p7 {
+      background-image: url('dashboard.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      min-width: 400px;
+    }
+    .panel.p8 {
+      background-image: url('softland.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      min-width: 400px;
+    }
+    .panel.p-pirate{
+        background-image: url('pirate.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .panel.p-presentation{
+        background-image: url('presentations.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .panel.p-goldberg {
+        background-image: url('goldber.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      min-width: 400px;
+    }
+  .panel.p-final {
+  background-image: url('pow.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  }
+    .p31 {
+      width: 0;
+      height: 0;
+      border-top: 165px solid white;
+      border-right: 49px solid transparent;
+      position: relative;
+      left: -15px;
+      top: -3px;
+      float: left;
+    }
+    .p32 {
+      width: 0;
+      height: 0;
+      border-bottom: 165px solid white;
+      border-left: 78px solid transparent;
+      position: relative;
+      right: -21px;
+      bottom: -57px;
+      float: right;
+    }
+    .p33 {
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="b1 pb-5">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Tiberiu Gal</a>
+
+        <div class="" id="navbarColor03">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#tldr">
+                The TLDR;
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#story">The Story</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <h2 class="mt-3 mb-3 px-5"><a id="tldr">The TLDR;</a></h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="bs-component">
+            <div
+              class="card text-secondary border-secondary bg-light bg-opacity-75 mb-3"
+            >
+              <div class="card-header">GET /users/tibi/about?v=latest</div>
+              <div class="card-body bg-white bg-opacity-75">
+                <pre class="prettyprint">
+{
+    "name": "Tiberiu Gal",
+    "position": "Software Engineer",
+    "location": "Cluj-Napoca, Romania",
+    "email": "galtiberiu@gmail.com",
+    "phone": "+40754035553"
+}
+</pre
+                >
+              </div>
+            </div>
+            <div
+              class="card text-secondary border-secondary bg-light bg-opacity-75 mb-3"
+            >
+              <div class="card-header">GET /users/tibi/interests</div>
+              <div class="card-body bg-white bg-opacity-75">
+                <pre class="prettyprint">
+[
+    {"distributed systems": "Working on large scale systems, solving hard problems in innovative ways"},
+    {"learning": "I'm currently learning rust, which I'll probably never use in real life"},
+    {"humans": "Helping people succeed by mentoring, or by just being nice"},
+]       </pre
+                >
+              </div>
+            </div>
+            <div
+              class="card text-secondary border-success bg-light bg-opacity-75 mb-3"
+            >
+              <div class="card-header">
+                GET /users/tibi/tech_stack?limit=10&sort=proficiency
+              </div>
+              <div class="card-body bg-white bg-opacity-75">
+                <pre class="prettyprint">
+{
+    "backend": ["golang +6y", "python ok", "java sure", "php no-more please"],
+    "frontend": ["js/ts", "react", "svelte", "+15 years"],
+    "*sql": ["proficient", "+15 years"],
+    "cassandra": ["cql", "+5 years", "data modeling"],
+    "kafka": ["librdkafka", "performance tuning"],
+    "elasticsearch": ["data migration", "complex aggregations"],
+    "redis": ["proficient", "+8 years", "data modeling"],
+    "mongodb": ["decent", "+3 years", "hobby projects"],
+    "ci/cd": ["jenkins", "ghithub", "I run most of my stuff in docker"],
+    "cloud": ["aws", "gcp", "k8s", "terraform", "helm"],
+}       </pre
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="bs-component">
+            <div
+              class="card text-secondary border-secondary bg-light bg-opacity-75 mb-3"
+            >
+              <div class="card-header">
+                GET /users/tibi/experience?limit=3&sort=date
+              </div>
+              <div class="card-body bg-white bg-opacity-75">
+                <pre class="prettyprint">
+[{
+"CrowdStrike": {
+    "company", "cybersecurity",
+    "position": "Senior Software Engineer",
+    "is_current": true,
+    "responsibilities": ["own the entire application lifecycle"],
+    "technologies": ["golang", "k8s", "aws", "kafka", "cassandra", "elasticsearch", "redis", "postresql", "grafana", "splunk", "s3", "sqs"],
+    "project highlights": ["custom sharding client over elasticsearch", "contributed to internal kafka handling library", "led development effort for a new products"],
+    "extra":["member of interview panel", "mentoring"],
+},
+"NTT Data": {
+    "company", "software development",
+    "position": "Senior Software Engineer / Technical Lead",
+    "is_current": false,
+    "responsibilities": ["own the entire application lifecycle", "interviewing", "mentoring"],
+    "technologies": ["golang", "etcd", "gcp", "protobuf"],
+    "project highlights": ["built identity management system"],
+},
+"8x8": {
+    "company", "Unified Communications (VoIP, Conferencing)",
+    "position": "Senior Software Engineer",
+    "is_current": false,
+    "responsibilities": ["own the entire application lifecycle"],
+    "technologies": ["golang", "php", "linux", "mysql", "redis", "rabbitmq", "kafka"],
+    "project highlights": ["rebuilt user management system with data migration", "integration with payment systems", "intragrations with third party systems (salesforce)"],
+    "extra":["pushed adoption of golang by building PoC projects"],
+},
+]       </pre
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <h2 class="mt-3 mb-3 px-5"><a id="story">The Story mode</a></h2>
+  </div>
+  <article class="comic">
+    <div class="panel p1">
+      <p class="text top-left">once upon a time...</p>
+      <p class="text bottom-right">...before the .com burst</p>
+    </div>
+    <div class="panel">
+      <p class="speech">
+        Hey! <br> Can you build me a website?
+        <br />
+        I want a shopping cart
+        <br />
+        and form submission
+      </p>
+      <img src="man-idea.png" width="150" class="img-fluid" align="left" />
+    </div>
+
+    <div class="panel p3">
+      <p class="speech">sure, here you go</p>
+      <p class="text bottom-right">...tibi is typing</p>
+    </div>
+    <div class="panel">
+      <p class="speech">
+        Experience Gained
+        <br />
+        PHP +5
+        <br />
+        MySQL +15
+        <br />
+        Javascript +10
+        <br />
+      </p>
+    </div>
+    <div class="panel p5">
+      <p class="speech">
+        We need an inventory management system
+        <br />
+      </p>
+      <p class="text bottom-right">
+        This client spends a lot of time manualy upating the inventory
+        <br />
+        We need to automate this process
+      </p>
+    </div>
+    <div class="panel">
+      <p class="text top-left">after lots of typing</p>
+      <p></p>
+      <p class="speech">
+        Experience Gained
+        <br />
+        Delphi +20
+        <br />
+        SQLServer +30
+        <br />
+      </p>
+    </div>
+    <div class="panel p6">
+      <p class="text top-left">
+        That machine was idle just now
+        <br />
+        but it became the bottleneck
+      </p>
+      <p>
+        <br />
+        <br />
+      </p>
+      <p></p>
+      <p class="speech">
+        Please help us optimize assembly line
+        <br />
+      </p>
+    </div>
+
+    <div class="panel">
+      <p class="text top-left">I should use a knapsack to model this</p>
+      <p><br /></p>
+      <img src="kanpsack.png" width="250" class="img-fluid" />
+    </div>
+    <div class="panel">
+      <p></p>
+      <p class="speech">
+        Experience Gained
+        <br />
+        Delphi +50
+        <br />
+        SQLServer +30
+        <br />
+        General Programming +100
+        <br />
+        Javascript +30
+        <br />
+      </p>
+      <p class="text bottom-right">Level UP!</p>
+    </div>
+
+    <div class="panel p7">
+      <p class="text top-left">
+        we have data in 3 diferent systems
+        <br />
+        How can we make sense of it ?
+      </p>
+
+      <p class="text bottom-right">
+        wish it could be searchable
+        <br />
+        like the internet, but internal
+      </p>
+    </div>
+    <div class="panel">
+      <p class="text top-left">
+        they could use an intranet portal , but sharepoint is not flexible
+        enough
+      </p>
+      <p>
+        <br />
+        <br />
+        <br />
+      </p>
+      <p class="text">
+        I need to dwelve among them
+        <br />
+        to understand their pain points
+      </p>
+    </div>
+    <div class="panel">
+      <p></p>
+      <p class="speech">
+        Experience Gained
+        <br />
+        PHP +100
+        <br />
+        SQLServer +30
+        <br />
+        MySQL +50
+        <br />
+        People skills +100
+        <br />
+        Windows Administration +50
+        <br />
+      </p>
+    </div>
+    <div class="panel  p8">
+        <p class="text top-left">We need the back-office portal for this sales system</p>
+        <p><br><br></p>
+        <p class="speech">in order to prevent piracy <br/>we need more than software licences<br/>
+        </p>
+
+        </div>
+    <div class="panel p-pirate">
+        <p class="text top-left">the pesky pirates are getting clever</p>
+
+        <p><br><br></p>
+        <p class="speech">modern problems require modern solutions</p>
+    </div>
+    <div class="panel">
+        <p class="speech">Experience Gained <br>
+            PHP +100<br>
+            Javascript +100<br>
+            AWS EC2/S3 +30<br>
+            Cryptography +100<br> 
+          
+        </p>
+        <p class="text bottom-right">bonus: Docker</p>
+        
+    </div>
+    <div class="panel p-presentation">
+        <p class="speach">we have this knowledge sharing program <br>
+            the more you give, the more you get
+        </p>
+        
+    </div>
+    <div class="panel">
+        <p class="speech">Experience Gained<br>
+        Communication +100<br>
+        Social Skills +100
+        </p>
+        <br>
+        <p class="speech">Extra Perk <br>
+            2x exp on every topic  </p>
+    </div>
+
+    <div class="panel">
+        <p class="text top-left">casual conversation near the watercooler </p>
+        <p><br><br></p>
+        <p class="speech">... so, we can't fix this isuse <br/> 
+            and it's costing us a lot of money
+             </p>
+    </div>
+    <div class="panel">
+        <p class="speech">Look <br>
+            I've built this real-time processing system<br/>
+            It closes the loophole <br>
+            And it's faster than the current solution
+        </p>
+    </div>
+    <div class="panel">
+        <p class="speech">Experience Gained <br> Golang +50<br> Redis +100 <br> Rabbitmq +50</p>
+    </div>
+    <div class="panel p-goldberg">
+
+    </div>
+    <div class="panel">
+        <p class="speech">and after the signup, we receive this event<br>
+            that triggers the payment system<br/>
+            and we expect a callback <br>
+            and then we upload to salesforce ...
+        </p>
+    </div>
+    <div class="panel">
+        <p class="speech">Experience Gained <br> Golang +200<br> MySQL +100 <br> Kafka +100 <br> 
+        Thirdparty Integrations +100</p>
+    </div>
+
+    
+    <div class="panel">
+        <p class="text top-left">I wish I could ger rid of these 50 if statements</p>
+        <p><br><br></p>
+        <p class="speech">based on RP we need to hit this cluster<br/>
+            but we might be running the migration <br >
+        </p>
+        <p class="text bottom-right">I only want to save some data to ES</p>
+    </div>
+
+    <div class="panel">
+        <p class="speech">Guys <br> We can build this library<br>
+        It will abstract all the clustering <br>
+        And it supports live migration
+    </p>
+    </div>
+    <div class="panel">
+        <p class="speech">Experience Gained <br> Golang +200<br> PostreSQL +100 <br> Kafka +100 <br> 
+        Elastic search +200<br>AWS +200 </p>
+    </div>
+
+    
+    <div class="panel p-final">
+      <p><br><br></p> 
+        <p class="speech" >and this is not the end</p>
+      <p class="text bottom-right">THE END</p>
+    </div>
+  </article>
+
+  <div class="mt-5 mb-5"><p></p></div>
+</body>
